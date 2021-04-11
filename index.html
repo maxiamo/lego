@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Lego</title>
+  <!--It was very great course, thank ya 〓D-->
+  <!--Стартовые стили шаблона-->
+  <link rel="stylesheet" href="css/starter.css">
+  <!--Ваши стили-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+      <div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"><img class="image" src="lego.png"></div>
+  </div>
+</div> 
+	<!--НАЧАЛО Шапка-->
+  <header class="mainheader">
+    <div class="container">
+     
+      <img src="img/logo.png">
+      
+      <nav class="mainnav">
+      	<ul>
+      		<li class="active"><a href="#">Серии наборов</a></li>
+      		<li><a href="#">О компании</a></li>
+      		<li><a href="#">Оставить заявку</a></li>
+      		<li><a href="#">Собери комплект</a></li>
+            <li><button class="buttonGoods" onclick="showGoodsInBag()"><a href="#openModal"><img src="img/cart25.png"></a></button><span id="stuff"> 0</span></li>
+      	</ul>
+      </nav>
+    </div>
+  </header>
+	<!--КОНЕЦ Шапка-->
+<div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <main>
+      
+    <div class="container">
+     
+      <!--НАЧАЛО Секция "Серии наборов"-->
+      <section>
+        <h2>Серии наборов</h2>
+        
+        <!--Стреки для листания слайдера-->
+				<img src="img/arrow_right.png" class="slider_arrow_right" id="rightSlide">
+				<img src="img/arrow_left.png" class="slider_arrow_left" id="leftSlide">
+       
+        <!--НАЧАЛО Обертка для слайдов-->
+        <div class="kit_slides_wrapper" id="slide">
+         
+          <!-- НАЧАЛО Слайд №1-->
+            <div class="slideshow-container">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="kit_slide" id="kit">
+        	  <img id="imgSlide"src="img/series/series1.jpg">
+        	  <div class="info">
+        	    <h3 id="nameSlide">THE LEGO MOVIE</h3>
+        	    <p id = "pSlide">
+        	      Познакомься с наборами из серии THE LEGO® MOVIE 2™, посмотри, как Эммет разворачивает свой новый дом мечты/спасательную ракету, когда Мими Катавасия прибывает на звездолёте.
+        	    </p>
+        	  </div>
+        	</div>
+            
+</div>
+
+<div class="mySlides fade">
+ <div class="kit_slide" id="kit">
+        	  <img id="imgSlide"src="img/series/series2.jpg">
+        	  <div class="info">
+        	    <h3 id="nameSlide">STAR WARS™</h3>
+        	    <p id = "pSlide">
+        	     Встречайте большие фигурки LEGO® Star Wars™ из далекой-далекой галактики. Дети смогут воссоздать легендарные битвы между силами добра и зла с помощью световых мечей, бластеров и другого крутого оружия. Простые в сборке и прочные фигурки любимых персонажей Star Wars™ выдержат даже самые долгие сражения!
+        	    </p>
+        	  </div>
+        	</div>
+            
+</div>
+
+<div class="mySlides fade">
+<div class="kit_slide" id="kit">
+        	  <img id="imgSlide"src="img/series/series3.jpg">
+        	  <div class="info">
+        	    <h3 id="nameSlide">NINJAGO®</h3>
+        	    <p id = "pSlide">
+        	    LEGO® NINJAGO® — удивительный мир, в котором ниндзя сражаются со злом. Ваш ребенок с удовольствием познакомится с этими героями и будет придумывать их новые удивительные приключения. Кроме того, дети смогут воссоздать эпизоды из популярного телесериала и вместе с друзьями соревноваться за звание мастера Кружитцу!
+
+        	    </p>
+        	  </div>
+        	</div>
+            
+</div>
+<div class="mySlides fade">
+<div class="kit_slide" id="kit">
+        	  <img id="imgSlide"src="img/series/series4.jpg">
+        	  <div class="info">
+        	    <h3 id="nameSlide">CITY</h3>
+        	    <p id = "pSlide">
+        	     Город LEGO® City — реалистичный мир LEGO, который вашему ребенку предстоит исследовать. На улицах этого оживленного города вы увидите легендарные транспортные средства и здания, среди которых обычные герои ловят плохих парней и тушат пожары. Этот веселый мир обладает особым очарованием и легко разбудит воображение ваших юных строителей.
+        	    </p>
+        	  </div>
+        	</div>
+            
+</div>
+<div class="mySlides fade">
+<div class="kit_slide" id="kit">
+        	  <img id="imgSlide"src="img/series/series5.jpg">
+        	  <div class="info">
+        	    <h3 id="nameSlide">TECHNIC™</h3>
+        	    <p id = "pSlide">
+        	      Наборы LEGO® Technic™ предназначены для опытных конструкторов LEGO. Из конструкторов серии LEGO Technic™ ваш ребенок сможет собрать сложные реалистичные механизмы, такие как коробка передач, двигатель с подвижными поршнями, система рулевого управления и рабочая стрела подъемного крана. Эти великолепные наборы выведут их творческие способности на новый уровень.
+        	    </p>
+        	  </div>
+        	</div>      
+</div>
+</div>
+    </div>      <!-- КОНЕЦ Слайд №1-->
+        </div>
+                
+        <!--КОНЕЦ Обертка для слайдов-->
+      </section>
+      <!--КОНЕЦ Секция "Серии наборов"-->
+      
+    <!--НАЧАЛО Секция "О компании"-->
+      <section>
+      	<h2>О компании</h2>
+      	
+      	<p>
+      		<strong>LEGO Group</strong> — датская частная компания, занимающаяся производством одноимённых серий развивающих игрушек, представляющих собой наборы деталей для сборки и моделирования разнообразных предметов — конструкторов. Второй по величине (после Hasbro) производитель игрушек в мире.
+      	</p>
+      	<p>
+      		Головной офис компании находится в Дании. Здесь же, в Дании, на полуострове Ютландия, в небольшом городке Биллунд, находится и самый большой Леголенд в мире — город, полностью построенный из конструктора LEGO.
+      	</p>
+      	<p>
+      		Основой наборов является кирпичик LEGO — деталь, представляющая собой полый пластмассовый блок, соединяющийся с другими такими же кирпичиками на шипах. В наборы также могут входить множество других деталей: фигурки людей и животных, колёса и так далее. Существуют наборы, в которые входят электродвигатели, различного рода датчики и даже микроконтроллеры. Наборы позволяют собирать модели автомобилей, самолётов, кораблей, зданий, роботов. Воплощает идею модульности, наглядно демонстрирующий детям то, как можно решать некоторые технические проблемы, также прививает навыки сборки, ремонта и разборки техники.
+      	</p>
+      </section>
+      <!--КОНЕЦ Секция "О компании"-->
+      
+      
+      
+      <!--НАЧАЛО Секция "Оставить заявку"-->
+      <section>
+      	<h2>Оставить заявку</h2>
+      	
+      	<!--НАЧАЛО Обертка/флекс-контейнер-->
+      	<div class="order-wrapper">
+      	  <!--НАЧАЛО Левая часть с полями для ввода-->
+      		<div class="order-form">
+      			<!--Имя-->
+      			<label for="firstname_field">Имя</label>
+      			<input type="text" id="firstname_field"> 
+      			<!--Фамилия-->
+      			<label for="lastname_field">Фамилия</label>
+      			<input type="text" id="lastname_field">
+      			<!--Номер телефона-->     	
+      			<label for="phone_field">Телефон</label>
+      			<input type="text" id="phone_field">
+      			<button id = "sendDataButton">Отправить</button>
+      		</div>
+      	  <!--КОНЕЦ Левая часть с полями для ввода-->
+      	  
+      	  <!--НАЧАЛО Правая часть с сообщением-->
+                <div class="order-alert visible" id = "order">
+                    <p>
+                        <strong>Уважаемый, Иванов Н.</strong><br>
+                        Наши специалисты уже получили Вашу заявку и свяжутся с Вами в ближайшее время по телефону <strong><nobr>8 999 123 45 67</nobr></strong><br>
+                        Спасибо за обращение! 
+                    </p>
+                </div>      	  
+      		<!--КОНЕЦ Правая часть с сообщением-->
+      	</div>
+      	<!--КОНЕЦ Обертка/флекс-контейнер-->
+      </section>
+      <!--КОНЕЦ Секция "Оставить заявку"-->
+      
+      <div id="openModal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">Название</h3>
+        <a href="#close" title="Close" class="close">×</a>
+      </div>
+      <div class="modal-body">    
+        <p>Содержимое модального окна...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+      <!--НАЧАЛО Секция "Собери комплект"-->
+      <section>
+      	<h2>Собери комплект</h2>
+      	
+      	<!--НАЧАЛО Обертка/флекс-контейнер для товаров-->
+      	<div class="goods-wrapper">
+      	
+      		<!--НАЧАЛО Товар №1-->
+      		<div class="product" id="product1">
+                <a class="goodsLinkInMain" href="#openModal" onclick="modalChange('1')"><img src="img/goods/1.png"></a>
+      			<h4>Пожарная машина</h4>
+               
+                <p class="goodsPrice"><span id="goodPriceNum1">1199</span> руб.</p>
+      			<button onclick="addingStuff('1')"><img id="image1" src="img/cart16.png" ></button>
+      		</div>
+      		<!--КОНЕЦ Товар №1-->
+      		<!--НАЧАЛО Товар №2-->
+      		<div class="product" id="product2">
+      		    <a class="goodsLinkInMain" href="#openModal" onclick="modalChange('2')"><img src="img/goods/2.jpg"></a>
+      			<h4>Гоночная машина</h4>
+                <p class="goodsPrice"><span id="goodPriceNum2">1699</span> руб.</p>
+      			<button onclick="addingStuff('2')"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №2-->
+      		<!--НАЧАЛО Товар №3-->
+      		<div class="product" id="product3">
+      		    <a class="goodsLinkInMain" href="#openModal" onclick="modalChange('3')"><img src="img/goods/3.jpg"></a>
+      			<h4>Попугай</h4>
+                <p class="goodsPrice"><span id="goodPriceNum3">899</span> руб.</p>
+      			<button onclick="addingStuff('3')"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №3-->
+      		
+      		<!--НАЧАЛО Товар №4-->
+      		<div class="product" id="product4">
+      			    <a class="goodsLinkInMain" href="#openModal" onclick="modalChange('4')"><img src="img/goods/4.jpg"></a>
+      			<h4>Аэропорт</h4>
+                <p class="goodsPrice"><span id="goodPriceNum4">1099</span> руб.</p>
+      			<button onclick="addingStuff('4')"><img src="img/cart16.png"></button>
+      		</div> 
+      		<!--КОНЕЦ Товар №4-->
+      		<!--НАЧАЛО Товар №5-->
+      		<div class="product" id="product5">
+      		    <a class="goodsLinkInMain" href="#openModal" onclick="modalChange('5')"><img src="img/goods/5.jpg"></a>
+      			<h4>Вертолет</h4>
+                <p class="goodsPrice"><span id="goodPriceNum5">799</span> руб.</p>
+      			<button onclick="addingStuff('5')"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №5-->
+      		<!--НАЧАЛО Товар №6-->
+      		<div class="product" id="product6">
+      		    <a class="goodsLinkInMain" href="#openModal" onclick="modalChange('6')"><img src="img/goods/6.jpg"></a>
+      			<h4>Дом (красный)</h4>
+                <p class="goodsPrice"><span id="goodPriceNum6">2199</span> руб.</p>
+      			<button onclick="addingStuff('6')"><img src="img/cart16.png"></button>
+      		</div>
+      		<!--КОНЕЦ Товар №6-->
+      	</div>
+      	<!--КОНЕЦ Обертка/флекс-контейнер для товаров-->
+      </section>
+      <!--КОНЕЦ Секция "Собери комплект"-->
+      
+    </div>
+  </main>
+    <div id="buttonUP" class="buttonUp">UP</div>
+
+<script src = "index.js"></script>
+</body>
+</html>

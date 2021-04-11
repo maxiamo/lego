@@ -1,0 +1,378 @@
+/* Здесь пишем свои стили */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.buttonUp{
+        position: fixed;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: red;
+   font-family: 'Bangers', cursive;
+    font-size: 33px;
+    bottom: 100px;
+    right: 100px;
+    border-radius:100%;
+    opacity: 0;
+    transition: opacity 1s;   
+    transition: all 1s;
+    border: 1px solid black;
+    text-shadow:1px 1px 0px #000, 1px 1px 2px yellow;
+}
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
+   z-index: 10;
+    position: fixed;
+    margin-top: -3px;
+
+ 
+}
+
+.progress-bar {
+  height: 4px;
+  background: red;
+transition: background 0.3s;
+     z-index: 10;
+}
+
+.kit_slide1{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+	width: 800px;
+}
+.kit_slide1 img{
+  width: 250px;
+}
+.kit_slide1 .info{
+  width: 510px;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.2s;
+  animation-name: fade;
+  animation-duration: 2.2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .17} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .17} 
+  to {opacity: 1}
+}
+
+.fadeFromZero {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.2s;
+  animation-name: fade;
+  animation-duration: 2.2s;
+}
+
+@-webkit-keyframes fadeZero {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeZero {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+position: relative;
+    top:45%;
+  transform-origin: center;
+  text-align: center;
+    vertical-align: middle;
+}
+
+.preloader__item {
+
+}
+
+
+.image{
+ 
+    text-align: center;
+
+    width:100px;
+    height: 100px;
+    transform-origin: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+@keyframes preloader-rotate {
+   0%,
+  100% {
+    transform: scale(0.6);
+      
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0px;
+    overflow: auto;
+    width:90%;
+    margin: auto;
+    height: 500px;
+    background-size: cover;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+     display: flex;
+    
+}
+.goodsLinkInMain{
+    width:218px;
+}
+.goodsLinkInMain >  img{
+    max-width: 218px;
+}
+.goodsPrice{
+    display: block;
+    font-size: 18px;
+    color:dimgrey;
+    width:100px;
+    height: 14px;
+    margin: 0px;
+    margin-bottom:0px;
+}
+.buttonGoods{
+    width:5px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 0px;
+    padding-right: 10px;
+}
+b{
+display: block;
+}
+.pGoods{
+display: block;
+}
+li > a{
+    transition: all .3s;
+}
